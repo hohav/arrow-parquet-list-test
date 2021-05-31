@@ -1,0 +1,10 @@
+[package]
+name = "arrow-parquet-list-test"
+version = "0.1.0"
+authors = ["melkor"]
+edition = "2018"
+
+[dependencies]
+arrow = "4.1"
+parquet = "4.1"
+parquet-format = "4.0"
