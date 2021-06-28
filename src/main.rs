@@ -11,14 +11,13 @@ pub fn main() -> Result<(), Box<dyn Error>> {
 	let mut builder = ListBuilder::new(Int32Builder::new(10));
 	builder.values().append_value(1)?;
 	builder.append(true)?;
-	builder.append(true)?;
 	builder.values().append_value(2)?;
 	builder.append(true)?;
 
 	let values = builder.finish();
 
 	let batch = RecordBatch::try_from_iter_with_nullable(
-		vec![("values", Arc::new(values) as ArrayRef, true)]
+		vec![("values", Arc::new(values) as ArrayRef, false)]
 	)?;
 
 	let buf = File::create("test.parquet")?;
