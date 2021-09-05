@@ -5,6 +5,6 @@ authors = ["melkor"]
 edition = "2018"
 
 [dependencies]
-arrow = { git = "https://github.com/apache/arrow-rs.git" }
-parquet = { git = "https://github.com/apache/arrow-rs.git" }
+arrow = "5.3"
+parquet = "5.3"
 parquet-format = "4.0"
