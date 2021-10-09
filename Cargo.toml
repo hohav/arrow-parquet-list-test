@@ -5,6 +5,6 @@ authors = ["melkor"]
 edition = "2018"
 
 [dependencies]
-arrow = "5.3"
-parquet = "5.3"
+arrow = "5.5"
+parquet = "5.5"
 parquet-format = "4.0"
